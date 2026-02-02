@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(
+      900px circle at 10% 0%,
+      rgba(18, 142, 243, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px circle at 90% 10%,
+      rgba(47, 191, 113, 0.14),
+      transparent 55%
+    ),
+    #f6fbff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Varela Round', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Styles for the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #128ef3; /* primary */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* Styles for the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #75c6fc; /* secondary */
+  border-radius: 4px;
+}
