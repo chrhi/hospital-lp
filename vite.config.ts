@@ -15,5 +15,5 @@ export default defineConfig(({ command }) => ({
   },
   // Dev should run at http://localhost:5173/
   // Build/deploy (e.g. GitHub Pages) can still be served from /Hospital-Website/
-  base: command === 'serve' ? '/' : '/Hospital-Website/',
+  base:'/hospital-lp',
 }));
