@@ -1,6 +1,11 @@
-import { descNums } from '@/Components/Shared/Consts';
+import { useTranslation } from 'react-i18next';
+
+type DescNumItem = { num: string; text: string };
 
 const DescNums = () => {
+  const { t } = useTranslation();
+  const descNums = t('home.descNums', { returnObjects: true }) as DescNumItem[];
+
   return (
     <div className="flex px-10 xs:px-16 sm:px-5 md:px-0 gap-5 flex-wrap items-center md:flex-nowrap text-center justify-center md:justify-around mt-10">
       {descNums.map((descNum, index) => (

@@ -1,0 +1,302 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "specialites": "Spécialités",
+    "plateautechnique": "Plateau technique",
+    "localisation": "Localisation",
+    "contact": "Contact"
+  },
+  "header": {
+    "clinicName": "CLINIQUE AALEM ESSIHA",
+    "tagline": "Clinique privée",
+    "logoAlt": "Clinique AALEM ESSIHA"
+  },
+  "common": {
+    "language": "Langue",
+    "bookAppointment": "Prendre rendez-vous",
+    "contactUs": "Contactez-nous",
+    "menu": "Menu",
+    "closeMenuAria": "Fermer le menu",
+    "send": "Envoyer",
+    "copyMessage": "Copier le message"
+  },
+  "home": {
+    "heroTitle": "Votre santé est notre priorité",
+    "heroLead": "La Clinique AALEM ESSIHA vous accompagne avec un plateau technique complet et des spécialités médico-chirurgicales pour une prise en charge de qualité.",
+    "bullet1": "Prise en charge médico-chirurgicale pluridisciplinaire",
+    "bullet2": "Radiologie (Scanner, IRM) et laboratoire sur place",
+    "bullet3": "Bloc opératoire (6 salles) et capacité de 155 lits",
+    "heroAlt": "Illustration clinique",
+    "descNums": [
+      { "num": "6", "text": "Salles d’opération" },
+      { "num": "155", "text": "Lits" },
+      { "num": "Scanner", "text": "Imagerie" },
+      { "num": "IRM", "text": "Résonance magnétique" },
+      { "num": "Labo", "text": "Analyses médicales" }
+    ]
+  },
+  "services": {
+    "sectionTitle": "Spécialités",
+    "intro1": "Les spécialités garanties par notre établissement.",
+    "intro2": "Chaque spécialité est assurée par une prise en charge structurée (consultation, examens si nécessaire, coordination du plateau technique et suivi).",
+    "moreInfo": "Pour plus d’informations (disponibilités, consultations, examens), contactez-nous.",
+    "bannerAlt": "Plateau technique",
+    "banner": {
+      "heading": "Plateau technique et capacité",
+      "texts": [
+        "6 salles d’opération pour la chirurgie programmée, avec un parcours patient organisé.",
+        "155 lits pour l’hospitalisation et la surveillance, selon les besoins de prise en charge.",
+        "Unité de radiologie pour l’imagerie de première intention et l’orientation diagnostique.",
+        "Scanner et IRM disponibles selon indication médicale, pour une imagerie avancée.",
+        "Laboratoire d’analyses médicales sur place pour les bilans et contrôles prescrits."
+      ]
+    },
+    "items": {
+      "chirurgiegenerale": {
+        "title": "Chirurgie générale",
+        "heading": "Chirurgie générale",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Organisation du parcours de soins : examens, planification, hospitalisation si nécessaire, et suivi."
+        ]
+      },
+      "obstetriquegynecologie": {
+        "title": "Obstétrique et gynécologie",
+        "heading": "Obstétrique et gynécologie",
+        "texts": [
+          "Consultations spécialisées : évaluation, conseils, et suivi personnalisé.",
+          "Prise en charge médicale",
+          "Suivi adapté selon les besoins",
+          "Orientation vers le plateau technique"
+        ]
+      },
+      "pediatrie": {
+        "title": "Médecine et chirurgie pédiatrique",
+        "heading": "Pédiatrie (médecine & chirurgie)",
+        "texts": [
+          "Consultations spécialisées : évaluation, conseils, et orientation selon l’âge.",
+          "Prise en charge médicale",
+          "Soins adaptés aux enfants",
+          "Coordination avec les services concernés"
+        ]
+      },
+      "cardiologieetchirurgie": {
+        "title": "Cardiologie et chirurgie",
+        "heading": "Cardiologie",
+        "texts": [
+          "Consultations spécialisées : évaluation, avis cardiologique, et suivi.",
+          "Évaluation et suivi",
+          "Coordination avec le plateau technique",
+          "Prise en charge pluridisciplinaire"
+        ]
+      },
+      "chirurgieurologique": {
+        "title": "Chirurgie urologique",
+        "heading": "Urologie",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Organisation du parcours de soins : examens, planification, hospitalisation si nécessaire, et suivi."
+        ]
+      },
+      "chirurgiemaxillofaciale": {
+        "title": "Chirurgie maxillo-faciale",
+        "heading": "Chirurgie maxillo-faciale",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Coordination avec le plateau technique"
+        ]
+      },
+      "ophtalmologie": {
+        "title": "Ophtalmologie",
+        "heading": "Ophtalmologie",
+        "texts": [
+          "Consultations spécialisées : examen, conseils, et orientation selon les symptômes.",
+          "Prise en charge médicale",
+          "Orientation vers les examens nécessaires",
+          "Suivi adapté selon les besoins"
+        ]
+      },
+      "orl": {
+        "title": "Chirurgie ORL",
+        "heading": "ORL",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Coordination avec le plateau technique"
+        ]
+      },
+      "traumatologie": {
+        "title": "Chirurgie osseuse et traumatologique",
+        "heading": "Traumatologie / Orthopédie",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Organisation du parcours de soins : examens, planification, hospitalisation si nécessaire, et suivi."
+        ]
+      },
+      "chirurgieplastique": {
+        "title": "Chirurgie plastique et reconstructrice",
+        "heading": "Chirurgie plastique & reconstructrice",
+        "texts": [
+          "Consultations spécialisées : diagnostic, avis, et orientation selon votre situation.",
+          "Prise en charge chirurgicale : préparation, intervention, et coordination avec le bloc opératoire.",
+          "Suivi pré et post-opératoire : contrôles, conseils, surveillance, et accompagnement.",
+          "Coordination pluridisciplinaire si besoin"
+        ]
+      },
+      "medecinenucleaire": {
+        "title": "Médecine nucléaire",
+        "heading": "Médecine nucléaire",
+        "texts": [
+          "Consultations spécialisées : information, indication, et organisation des examens.",
+          "Orientation vers les examens nécessaires",
+          "Coordination avec le plateau technique",
+          "Suivi adapté selon les besoins"
+        ]
+      },
+      "cardiologieinterventionnelle": {
+        "title": "Cardiologie interventionnelle",
+        "heading": "Cardiologie interventionnelle",
+        "texts": [
+          "Consultations spécialisées : évaluation, avis, et préparation du parcours.",
+          "Évaluation et suivi",
+          "Coordination pluridisciplinaire",
+          "Organisation du parcours de soins : examens, planification, hospitalisation si nécessaire, et suivi."
+        ]
+      }
+    }
+  },
+  "about": {
+    "title": "À propos de la clinique",
+    "subtitle": "Informations générales sur l’établissement.",
+    "presentationTitle": "Présentation",
+    "paragraphs": [
+      "Le nom de l’hôpital privé est « CLINIQUE AALEM ESSIHA ».",
+      "Nous mettons à disposition des patients un ensemble de spécialités médico-chirurgicales, appuyées par un plateau technique complet.",
+      "Notre objectif : une prise en charge claire, coordonnée et efficace, depuis la consultation jusqu’au suivi."
+    ]
+  },
+  "plateau": {
+    "title": "Plateau technique",
+    "intro1": "La clinique s’appuie sur un plateau technique complet : radiologie, scanner et IRM, laboratoire d’analyses médicales, bloc opératoire (6 salles) et capacité d’accueil de 155 lits.",
+    "intro2": "Des équipements essentiels pour des diagnostics rapides, une coordination efficace des soins et un suivi adapté.",
+    "bannerAlt": "Clinique",
+    "cards": {
+      "radiologie": {
+        "title": "Unité de radiologie",
+        "items": [
+          "Imagerie radiographique conventionnelle",
+          "Orientation et coordination des examens selon prescription",
+          "Compte rendu et suivi des résultats"
+        ]
+      },
+      "laboratoire": {
+        "title": "Laboratoire d’analyses médicales",
+        "items": [
+          "Analyses et bilans prescrits réalisés sur place",
+          "Contrôles et suivis biologiques selon besoin",
+          "Transmission des résultats au parcours de soins"
+        ]
+      },
+      "scannerIrm": {
+        "title": "Scanner et IRM",
+        "items": [
+          "Scanner",
+          "Imagerie par résonance magnétique (IRM)",
+          "Examens réalisés selon indication médicale"
+        ]
+      },
+      "bloc": {
+        "title": "Bloc opératoire",
+        "items": [
+          "6 salles d’opération",
+          "Organisation de la prise en charge pré et post-opératoire",
+          "Coordination avec les spécialités concernées"
+        ]
+      },
+      "capacite": {
+        "title": "Capacité d’accueil",
+        "items": [
+          "155 lits",
+          "Hospitalisation et surveillance selon les besoins",
+          "Suivi coordonné avec les équipes médicales"
+        ]
+      }
+    }
+  },
+  "map": {
+    "title": "Localisation",
+    "intro": "Retrouvez la Clinique AALEM ESSIHA sur la carte. Vous pourrez aussi ouvrir l’itinéraire directement dans Google Maps.",
+    "addressBlockTitle": "Adresse & accès",
+    "addressLabel": "Adresse",
+    "addressPending": "Adresse : à préciser",
+    "addressNote": "Dès que vous me donnez l’adresse exacte (ou le lien Google Maps), je mets cette section à jour.",
+    "accessLabel": "Accès",
+    "access1": "Itinéraire Google Maps disponible",
+    "access2": "Indications de parking : à préciser",
+    "access3": "Points de repère : à préciser",
+    "accessTip": "Astuce : vous pouvez aussi envoyer des coordonnées GPS (latitude/longitude).",
+    "openMaps": "Ouvrir dans Google Maps",
+    "requestDirections": "Demander un itinéraire",
+    "iframeTitle": "Carte - Clinique AALEM ESSIHA",
+    "interactiveTitle": "Carte interactive",
+    "interactiveNote": "Si la carte n’affiche pas le bon emplacement, envoyez-moi le lien Google Maps exact et je le remplacerai."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle1": "Une question, un besoin d’information, ou une demande de rendez-vous ? Laissez-nous un message.",
+    "subtitle2": "Pour un rendez-vous, indiquez la spécialité souhaitée et vos disponibilités dans le message.",
+    "notice": "L’envoi en ligne sera disponible prochainement. En attendant, vous pouvez remplir le formulaire puis utiliser <bold>Copier le message</bold>.",
+    "nameLabel": "Nom",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "phoneLabel": "Téléphone (optionnel)",
+    "phonePlaceholder": "+213 ...",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Expliquez votre besoin… (spécialité souhaitée, disponibilités, informations utiles)",
+    "soonNote": "Envoi en ligne bientôt disponible.",
+    "validation": {
+      "name": "Votre nom est requis.",
+      "email": "Votre email est requis.",
+      "message": "Votre message est requis."
+    },
+    "clipboard": {
+      "phoneLine": "Téléphone : {{phone}}\n",
+      "body": "Nom : {{name}}\nEmail : {{email}}\n{{phoneLine}}\nMessage :\n{{message}}\n",
+      "success": "Message copié. Vous pouvez maintenant le coller où vous le souhaitez.",
+      "failure": "Impossible de copier automatiquement. Sélectionnez le texte et copiez-le manuellement."
+    }
+  },
+  "footer": {
+    "hours": "Horaires : à préciser",
+    "navigation": "Navigation",
+    "specialtiesTitle": "Spécialités (extraits)",
+    "specialtiesHint": "Voir la section <bold>Spécialités</bold> pour la liste complète.",
+    "disclaimer": "Les informations (adresse, horaires, téléphone/email) seront mises à jour dès réception des détails officiels.",
+    "copyright": "© {{year}} Clinique AALEM ESSIHA",
+    "websitePending": "Site web : à préciser",
+    "clinicLine": "Clinique AALEM ESSIHA",
+    "addressLine": "Adresse : à préciser",
+    "contactTitle": "Contact",
+    "contactBlurb": "Besoin d’informations ? Écrivez-nous via le formulaire de contact.",
+    "contactButton": "Nous contacter",
+    "logoAlt": "Logo",
+    "departments": [
+      "Chirurgie générale",
+      "Gynécologie",
+      "Pédiatrie",
+      "Cardiologie",
+      "Urologie",
+      "ORL"
+    ]
+  }
+}

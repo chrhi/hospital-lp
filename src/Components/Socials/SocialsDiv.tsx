@@ -7,7 +7,7 @@ import {
 } from 'react-icons/bs';
 const SocialsDiv = () => {
   return (
-    <div className="flex gap-3 my-3 text-2xl ml-1">
+    <div className="flex gap-3 my-3 text-2xl ms-1">
       <a target="_blank" href="https://www.linkedin.com/in/letodiani-roma/">
         <BsLinkedin />
       </a>

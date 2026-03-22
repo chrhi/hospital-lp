@@ -1,13 +1,15 @@
 import { SelectedPage } from '@/Components/Shared/Types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
-  link: { label: string; id: SelectedPage };
+  link: { id: SelectedPage };
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const Link = ({ link, selectedPage, setSelectedPage }: Props) => {
+  const { t } = useTranslation();
   const handleLinkClick = () => {
     setSelectedPage(link.id);
   };
@@ -22,7 +24,7 @@ const Link = ({ link, selectedPage, setSelectedPage }: Props) => {
       href={`#${link.id}`}
       onClick={handleLinkClick}
     >
-      {link.label}
+      {t(`nav.${link.id}`)}
     </AnchorLink>
   );
 };

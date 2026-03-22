@@ -1,18 +1,20 @@
 import { SelectedService } from '@/Components/Shared/Types';
+import { useTranslation } from 'react-i18next';
 
 type Props = {
   SelectService: SelectedService;
   setSelectService: (value: SelectedService) => void;
   service: {
     img: string;
-    title: string;
     id: SelectedService;
   };
 };
 
 const Service = ({ SelectService, setSelectService, service }: Props) => {
+  const { t } = useTranslation();
   const id = service.id;
   const selected = SelectService === id;
+  const title = t(`services.items.${id}.title`);
 
   const onSelect = () => setSelectService(id);
 
@@ -29,7 +31,7 @@ const Service = ({ SelectService, setSelectService, service }: Props) => {
       tabIndex={0}
       onClick={onSelect}
       onKeyDown={onKeyDown}
-      title={service.title}
+      title={title}
       className={`${
         selected
           ? 'bg-secondary/60 border-primary/40 ring-2 ring-primary/25'
@@ -39,10 +41,10 @@ const Service = ({ SelectService, setSelectService, service }: Props) => {
       <img
         className="max-w-[30px] xs:max-w-[50px] md:max-w-[75px] lg:max-w-[60px]"
         src={service.img}
-        alt={service.title}
+        alt={title}
       />
       <p className="text-[10px] font-bold sm:text-sm lg:text-lg leading-tight px-1">
-        {service.title}
+        {title}
       </p>
     </div>
   );

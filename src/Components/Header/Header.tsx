@@ -4,8 +4,10 @@ import { useState, useEffect } from 'react';
 import { SelectedPage } from '@/Components/Shared/Types';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
     SelectedPage.Home
   );
@@ -41,13 +43,13 @@ const Header = () => {
         <img
           className="w-14 sm:w-20 lg:w-24 shrink-0"
           src={Logo}
-          alt="Clinique AALEM ESSIHA"
+          alt={t('header.logoAlt')}
         />
         <div className="hidden sm:block leading-tight min-w-0">
           <div className="font-extrabold tracking-wide text-ink truncate">
-            CLINIQUE AALEM ESSIHA
+            {t('header.clinicName')}
           </div>
-          <div className="text-xs opacity-80">Clinique privée</div>
+          <div className="text-xs opacity-80">{t('header.tagline')}</div>
         </div>
       </AnchorLink>
       <NavBar

@@ -6,13 +6,16 @@ import useMediaQuery from '@/Hooks/useMediaQuery';
 
 import Links from './Links';
 import Button from '../UI/Button';
+import LanguageSelect from './LanguageSelect';
 import { navLinks } from '@/Components/Shared/Consts';
+import { useTranslation } from 'react-i18next';
 type Props = {
   selectedPage: SelectedPage;
   setSelectedPage: (value: SelectedPage) => void;
 };
 
 const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
+  const { t } = useTranslation();
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery('(min-width: 1024px)');
 
@@ -30,18 +33,19 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <nav className="shrink-0">
       {isAboveMediumScreens && (
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-6">
           <div className="flex items-center gap-6 flex-wrap justify-end">
             <Links
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
           </div>
+          <LanguageSelect className="shrink-0" />
           <Button
             href={`#${SelectedPage.Contact}`}
             onClick={() => setSelectedPage(SelectedPage.Contact)}
           >
-            Prendre rendez-vous
+            {t('common.bookAppointment')}
           </Button>
         </div>
       )}
@@ -60,23 +64,26 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
           />
 
           {/* Drawer */}
-          <div className="fixed right-0 top-0 z-50 h-[100dvh] w-[min(90vw,360px)] bg-white/95 backdrop-blur-xl drop-shadow-2xl border-l border-white/60 flex flex-col">
+          <div className="fixed end-0 top-0 z-50 h-[100dvh] w-[min(90vw,360px)] bg-white/95 backdrop-blur-xl drop-shadow-2xl border-s border-white/60 flex flex-col">
             <div className="flex items-center justify-between px-5 py-4 border-b border-ink/5">
               <div className="min-w-0">
                 <div className="text-sm font-extrabold tracking-wide text-ink truncate">
-                  Menu
+                  {t('common.menu')}
                 </div>
                 <div className="text-xs opacity-70 truncate">
-                  Clinique AALEM ESSIHA
+                  {t('header.clinicName')}
                 </div>
               </div>
-              <button
-                aria-label="Fermer le menu"
-                onClick={closeMenu}
-                className="p-2 rounded-xl hover:bg-ink/5 transition"
-              >
-                <XMarkIcon className="h-8 w-8" />
-              </button>
+              <div className="flex items-center gap-2 shrink-0">
+                <LanguageSelect className="max-w-[120px] text-xs py-1.5" />
+                <button
+                  aria-label={t('common.closeMenuAria')}
+                  onClick={closeMenu}
+                  className="p-2 rounded-xl hover:bg-ink/5 transition"
+                >
+                  <XMarkIcon className="h-8 w-8" />
+                </button>
+              </div>
             </div>
 
             <div className="flex-1 overflow-auto px-4 py-4">
@@ -97,7 +104,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
                           : 'text-ink hover:bg-ink/5'
                       }`}
                     >
-                      <span className="truncate">{link.label}</span>
+                      <span className="truncate">{t(`nav.${link.id}`)}</span>
                       <span
                         className={`h-2 w-2 rounded-full ${
                           active ? 'bg-primary' : 'bg-transparent'
@@ -118,7 +125,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
                 }}
                 className="w-full text-base"
               >
-                Prendre rendez-vous
+                {t('common.bookAppointment')}
               </Button>
             </div>
           </div>
