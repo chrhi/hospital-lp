@@ -1,5 +1,5 @@
 import Button from '@/Components/UI/Button';
-import hero from '@/assets/Images/hero.png';
+import heroBg from '@/assets/hospital-images/hopital-12.jpg';
 import DescNums from './DescNums';
 import SectionWrapper from '../SectionWrapper';
 import { motion } from 'framer-motion';
@@ -10,21 +10,30 @@ const Home = () => {
 
   return (
     <SectionWrapper id="home">
-      <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 text-center md:text-start">
+      <div className="relative min-h-[min(70vh,520px)] overflow-hidden rounded-3xl">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroBg})` }}
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-background/92 via-background/60 to-background/40 md:bg-gradient-to-r md:from-background/93 md:via-background/65 md:to-background/25"
+          aria-hidden
+        />
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="tracking-wider md:tracking-normal max-w-xs lg:max-w-xl"
+          className="relative z-10 flex flex-col items-center text-center md:items-start md:text-start px-6 py-12 md:px-12 md:py-14 lg:max-w-xl tracking-wider md:tracking-normal [text-shadow:0_1px_2px_rgb(255_255_255/0.85)]"
         >
-          <h1 className="lg:text-7xl text-4xl font-bold leading-tight">
+          <h1 className="lg:text-7xl text-4xl font-bold leading-tight text-ink">
             {t('home.heroTitle')}
           </h1>
-          <p className="text-lg md:text-base lg:text-xl my-10">
+          <p className="text-lg md:text-base lg:text-xl my-10 text-ink">
             {t('home.heroLead')}
           </p>
-          <div className="text-sm md:text-base opacity-90 max-w-xl mx-auto md:mx-0">
+          <div className="text-sm md:text-base text-ink/90 max-w-xl">
             <ul className="space-y-2">
               <li>• {t('home.bullet1')}</li>
               <li>• {t('home.bullet2')}</li>
@@ -32,15 +41,6 @@ const Home = () => {
             </ul>
           </div>
           <Button href="#contact">{t('common.bookAppointment')}</Button>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.98 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.4 }}
-          transition={{ duration: 0.55, ease: 'easeOut', delay: 0.05 }}
-          className="max-w-xs md:max-w-none"
-        >
-          <img src={hero} alt={t('home.heroAlt')} />
         </motion.div>
       </div>
       <motion.div
