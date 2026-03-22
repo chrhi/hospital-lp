@@ -2,9 +2,13 @@ import Logo from '/logo.png';
 import NavBar from './NavBar';
 import { useState, useEffect } from 'react';
 import { SelectedPage } from '@/Components/Shared/Types';
+import { navLinks } from '@/Components/Shared/Consts';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+
+/** Viewport offset from top; aligns with section scroll-margin and fixed header */
+const SCROLL_SPY_TOP_PX = 96;
 
 const Header = () => {
   const { t } = useTranslation();
@@ -15,15 +19,27 @@ const Header = () => {
   const flexBetween = 'flex items-center justify-between';
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY === 0) {
-        setIsTopOfPage(true);
-        setSelectedPage(SelectedPage.Home);
+    const updateFromScroll = () => {
+      setIsTopOfPage(window.scrollY < 48);
+
+      let active: SelectedPage = SelectedPage.Home;
+      for (const { id } of navLinks) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (el.getBoundingClientRect().top <= SCROLL_SPY_TOP_PX) {
+          active = id;
+        }
       }
-      if (window.scrollY !== 0) setIsTopOfPage(false);
+      setSelectedPage(active);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    updateFromScroll();
+    window.addEventListener('scroll', updateFromScroll, { passive: true });
+    window.addEventListener('resize', updateFromScroll);
+    return () => {
+      window.removeEventListener('scroll', updateFromScroll);
+      window.removeEventListener('resize', updateFromScroll);
+    };
   }, []);
 
   return (
@@ -32,7 +48,7 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.35, ease: 'easeOut' }}
       className={`${flexBetween} gap-3 ${
-        isTopOfPage ? 'bg-transparent' : 'bg-white/80 backdrop-blur-md shadow-sm'
+        isTopOfPage ? 'bg-transparent' : 'bg-white/80 backdrop-blur-md border-b border-ink/10'
       } transition fixed top-0 z-30 w-full px-4 py-2 md:px-12 md:py-2.5`}
     >
       <AnchorLink

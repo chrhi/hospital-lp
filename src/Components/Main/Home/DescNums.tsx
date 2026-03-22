@@ -10,7 +10,7 @@ const DescNums = () => {
     <div className="mt-10 flex flex-wrap items-center justify-center gap-5 px-6 text-center sm:px-10 md:flex-nowrap md:justify-around md:px-12 lg:px-16">
       {descNums.map((descNum, index) => (
         <div
-          className="w-xl rounded-3xl border border-white/60 bg-white/80 p-6 md:px-4 lg:w-1/5"
+          className="w-xl rounded-3xl border-2 border-ink/12 bg-white/80 p-6 md:px-4 lg:w-1/5"
           key={index}
         >
           <h3 className="lg:text-4xl text-2xl font-bold mb-2">{descNum.num}</h3>

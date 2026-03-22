@@ -26,7 +26,7 @@ const ContactSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.45, ease: 'easeOut' }}
-        className="max-w-3xl mx-auto bg-white/80 rounded-3xl shadow-lg p-6 md:p-8 border border-white/60 space-y-4"
+        className="max-w-3xl mx-auto bg-white/80 rounded-3xl border-2 border-ink/12 p-6 md:p-8 space-y-4"
       >
         <div className="rounded-2xl border border-primary/20 bg-primary/5 px-4 py-4">
           <p className="text-sm opacity-80">{t('map.phoneLabel')}</p>
@@ -51,7 +51,7 @@ const ContactSection = () => {
           href={mapsOpenUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex w-full items-center justify-center bg-primary transition hover:bg-[#158ace] px-7 py-3 min-h-12 shadow-lg rounded-xl text-white font-bold"
+          className="inline-flex w-full items-center justify-center border-2 border-[#0d7bc4] bg-primary transition hover:bg-[#158ace] px-7 py-3 min-h-12 rounded-xl text-white font-bold"
         >
           {t('map.openMaps')}
         </a>

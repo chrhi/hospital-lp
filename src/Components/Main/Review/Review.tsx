@@ -13,7 +13,7 @@ const Review = ({ user, index }: Props) => {
     <div
       className={` ${
         index % 2 !== 0 && 'md:mb-16'
-      } p-5 max-w-[300px] bg-[#d5f5ff] rounded-3xl shadow-lg`}
+      } p-5 max-w-[300px] bg-[#d5f5ff] rounded-3xl border-2 border-primary/25`}
     >
       <div className="flex gap-5 items-center">
         <img className="w-12 rounded-full" src={user.img} alt={user.name} />

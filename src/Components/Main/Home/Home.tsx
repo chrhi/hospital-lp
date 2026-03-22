@@ -23,7 +23,7 @@ const Home = () => {
           className="relative z-10 grid grid-cols-1 items-center gap-8 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-2 lg:gap-10 lg:px-12"
         >
           <div className="flex flex-col items-center text-center md:items-start md:text-start tracking-wider md:tracking-normal">
-            <span className="inline-flex items-center rounded-full border border-primary/30 bg-white/70 px-4 py-1 text-xs font-bold uppercase tracking-wider text-primary shadow-sm">
+            <span className="inline-flex items-center rounded-full border-2 border-primary/35 bg-white/70 px-4 py-1 text-xs font-bold uppercase tracking-wider text-primary">
               Clinique AALEM ESSIHA
             </span>
             <h1 className="mt-4 text-4xl font-bold leading-tight text-ink lg:text-6xl">
@@ -41,7 +41,7 @@ const Home = () => {
               <Button href="#contact">{t('common.bookAppointment')}</Button>
               <a
                 href="#localisation"
-                className="inline-flex items-center justify-center rounded-xl border border-primary/30 bg-white/70 px-6 py-3 font-bold text-primary shadow-md transition hover:bg-white"
+                className="inline-flex items-center justify-center rounded-xl border-2 border-primary/35 bg-white/70 px-6 py-3 font-bold text-primary transition hover:bg-white"
               >
                 {t('nav.localisation')}
               </a>
@@ -49,7 +49,7 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-3 md:gap-4">
-            <div className="col-span-2 overflow-hidden rounded-3xl border border-white/70 bg-white shadow-lg">
+            <div className="col-span-2 overflow-hidden rounded-3xl border-2 border-ink/12 bg-white">
               <img
                 src={hospital11}
                 alt=""
@@ -57,7 +57,7 @@ const Home = () => {
                 className="h-44 w-full object-cover transition duration-500 hover:scale-105 md:h-56"
               />
             </div>
-            <div className="row-span-2 overflow-hidden rounded-3xl border border-white/70 bg-white shadow-lg">
+            <div className="row-span-2 overflow-hidden rounded-3xl border-2 border-ink/12 bg-white">
               <img
                 src={hospital01}
                 alt=""
@@ -65,7 +65,7 @@ const Home = () => {
                 className="h-full min-h-[220px] w-full object-cover transition duration-500 hover:scale-105 md:min-h-[260px]"
               />
             </div>
-            <div className="overflow-hidden rounded-3xl border border-white/70 bg-white shadow-lg">
+            <div className="overflow-hidden rounded-3xl border-2 border-ink/12 bg-white">
               <img
                 src={hospital03}
                 alt=""
@@ -73,7 +73,7 @@ const Home = () => {
                 className="h-32 w-full object-cover transition duration-500 hover:scale-105 md:h-36"
               />
             </div>
-            <div className="overflow-hidden rounded-3xl border border-white/70 bg-white shadow-lg">
+            <div className="overflow-hidden rounded-3xl border-2 border-ink/12 bg-white">
               <img
                 src={hospital06}
                 alt=""
@@ -81,7 +81,7 @@ const Home = () => {
                 className="h-32 w-full object-cover transition duration-500 hover:scale-105 md:h-36"
               />
             </div>
-            <div className="col-span-2 overflow-hidden rounded-3xl border border-white/70 bg-white shadow-lg">
+            <div className="col-span-2 overflow-hidden rounded-3xl border-2 border-ink/12 bg-white">
               <img
                 src={hospital09}
                 alt=""

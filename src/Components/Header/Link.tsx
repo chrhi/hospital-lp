@@ -17,9 +17,7 @@ const Link = ({ link, selectedPage, setSelectedPage }: Props) => {
   return (
     <AnchorLink
       className={`${
-        selectedPage === link.id
-          ? 'text-primary border-b-2 mt-0.5 border-primary/70'
-          : 'text-ink'
+        selectedPage === link.id ? 'text-primary' : 'text-ink'
       } transition font-bold text-lg duration-500 hover:text-primary`}
       href={`#${link.id}`}
       onClick={handleLinkClick}

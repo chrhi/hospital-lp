@@ -7,7 +7,6 @@ import radiology from '@/assets/Images/Icons/Radiology.png';
 import urology from '@/assets/Images/Icons/Urology.png';
 import medicine from '@/assets/Images/Icons/Medicine.png';
 
-import Banner1 from '@/assets/Images/banner1.png';
 import Banner2 from '@/assets/Images/banner2.png';
 
 import doc1 from '@/assets/Images/Doctors/doc1.png';
@@ -45,8 +44,6 @@ export const ServicesData: { img: string; id: SelectedService }[] = [
   { img: radiology, id: SelectedService.MedecineNucleaire },
   { img: cardiology, id: SelectedService.CardiologieInterventionnelle },
 ];
-
-export const banner1Image = Banner1;
 
 export const DoctorsData = {
   heading: 'Meet Our Specialists',

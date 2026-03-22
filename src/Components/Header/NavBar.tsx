@@ -40,7 +40,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
           </div>
-          <LanguageSelect className="shrink-0 min-h-12 px-7 text-base" />
+          <LanguageSelect size="toolbar" className="shrink-0" />
           <Button
             href={`#${SelectedPage.Contact}`}
             onClick={() => setSelectedPage(SelectedPage.Contact)}
@@ -64,7 +64,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
           />
 
           {/* Drawer */}
-          <div className="fixed end-0 top-0 z-50 h-[100dvh] w-[min(82vw,320px)] bg-white/95 backdrop-blur-xl drop-shadow-2xl border-s border-white/60 flex flex-col">
+          <div className="fixed end-0 top-0 z-50 h-[100dvh] w-[min(82vw,320px)] bg-white/95 backdrop-blur-xl border-s-2 border-ink/12 border-e border-ink/8 flex flex-col">
             <div className="flex items-center justify-between px-5 py-4 border-b border-ink/5">
               <div className="min-w-0">
                 <div className="text-sm font-extrabold tracking-wide text-ink truncate">

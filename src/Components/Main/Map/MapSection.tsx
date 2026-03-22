@@ -34,7 +34,7 @@ const MapSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: 'easeOut' }}
-          className="bg-white/80 rounded-3xl shadow-lg p-6 text-start border border-white/60"
+          className="bg-white/80 rounded-3xl border-2 border-ink/12 p-6 text-start"
         >
           <div className="flex items-center gap-3 mb-4">
             <MapPinIcon className="h-6 w-6 text-primary" />
@@ -66,7 +66,7 @@ const MapSection = () => {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                className="inline-flex items-center justify-center bg-primary transition hover:bg-[#158ace] px-7 py-3 min-h-12 shadow-lg rounded-xl text-white font-bold w-full sm:w-auto"
+                className="inline-flex items-center justify-center border-2 border-[#0d7bc4] bg-primary transition hover:bg-[#158ace] px-7 py-3 min-h-12 rounded-xl text-white font-bold w-full sm:w-auto"
                 href={mapsOpenUrl}
                 target="_blank"
                 rel="noreferrer"
@@ -74,7 +74,7 @@ const MapSection = () => {
                 {t('map.openMaps')}
               </a>
               <a
-                className="inline-flex items-center justify-center bg-white/70 border border-white/60 transition hover:bg-white px-7 py-3 min-h-12 shadow-lg rounded-xl text-ink font-bold w-full sm:w-auto"
+                className="inline-flex items-center justify-center border-2 border-ink/15 bg-white/70 transition hover:bg-white px-7 py-3 min-h-12 rounded-xl text-ink font-bold w-full sm:w-auto"
                 href="#contact"
               >
                 {t('map.requestDirections')}
@@ -88,7 +88,7 @@ const MapSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: 'easeOut', delay: 0.05 }}
-          className="bg-white/80 rounded-3xl shadow-lg overflow-hidden border border-white/60"
+          className="bg-white/80 rounded-3xl border-2 border-ink/12 overflow-hidden"
         >
           <div className="aspect-video w-full">
             <iframe

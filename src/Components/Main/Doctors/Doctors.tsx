@@ -51,7 +51,7 @@ const Doctors = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.45, ease: 'easeOut', delay }}
-              className="bg-white/80 rounded-3xl shadow-lg p-6 border border-white/60"
+              className="bg-white/80 rounded-3xl border-2 border-ink/12 p-6"
             >
               <div className="flex items-center gap-3 mb-4">
                 <Icon className="h-6 w-6 text-primary" />
@@ -74,7 +74,7 @@ const Doctors = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="mt-10 bg-secondary/30 shadow-xl rounded-2xl p-5 pb-0 max-w-3xl mx-auto border border-white/60"
+        className="mt-10 bg-secondary/30 rounded-2xl border-2 border-ink/12 p-5 pb-0 max-w-3xl mx-auto"
       >
         <img src={banner2} alt={t('plateau.bannerAlt')} />
       </motion.div>

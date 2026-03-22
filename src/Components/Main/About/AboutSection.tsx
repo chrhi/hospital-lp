@@ -23,7 +23,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="bg-white/80 rounded-3xl shadow-lg p-6 md:p-8 border border-white/60">
+        <div className="bg-white/80 rounded-3xl border-2 border-ink/12 p-6 md:p-8">
           <div className="flex items-center gap-3 mb-4">
             <InformationCircleIcon className="h-6 w-6 text-primary" />
             <h4 className="font-bold text-lg">{t('about.presentationTitle')}</h4>

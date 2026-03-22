@@ -18,7 +18,7 @@ const Button = ({
   disabled = false,
 }: Props) => {
   const base =
-    'inline-flex items-center justify-center bg-primary px-7 py-3 min-h-12 shadow-lg rounded-xl text-white font-bold transition';
+    'inline-flex items-center justify-center border-2 border-[#0d7bc4] bg-primary px-7 py-3 min-h-12 rounded-xl text-white font-bold transition';
   const hover = disabled ? '' : 'hover:bg-[#158ace]';
   const disabledStyles = disabled ? 'opacity-60 cursor-not-allowed' : '';
 
