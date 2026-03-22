@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <div>
       <Home />
+      <AboutSection />
       <div className="m-auto max-w-[1250px] px-5 md:px-16">
-        <AboutSection />
         <Services />
         <Doctors />
         <MapSection />
