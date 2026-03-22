@@ -33,7 +33,7 @@ const Header = () => {
       transition={{ duration: 0.35, ease: 'easeOut' }}
       className={`${flexBetween} gap-3 ${
         isTopOfPage ? 'bg-transparent' : 'bg-white/80 backdrop-blur-md shadow-sm'
-      } transition fixed top-0 z-30 w-full px-4 py-3 md:px-16`}
+      } transition fixed top-0 z-30 w-full px-4 py-2 md:px-12 md:py-2.5`}
     >
       <AnchorLink
         href={`#${SelectedPage.Home}`}
@@ -41,15 +41,15 @@ const Header = () => {
         className="flex items-center gap-3 min-w-0"
       >
         <img
-          className="w-14 sm:w-20 lg:w-24 shrink-0"
+          className="w-12 sm:w-16 lg:w-20 shrink-0"
           src={Logo}
           alt={t('header.logoAlt')}
         />
         <div className="hidden sm:block leading-tight min-w-0">
-          <div className="font-extrabold tracking-wide text-ink truncate">
+          <div className="font-extrabold tracking-wide text-sm lg:text-base text-ink truncate">
             {t('header.clinicName')}
           </div>
-          <div className="text-xs opacity-80">{t('header.tagline')}</div>
+          <div className="text-[11px] opacity-80">{t('header.tagline')}</div>
         </div>
       </AnchorLink>
       <NavBar

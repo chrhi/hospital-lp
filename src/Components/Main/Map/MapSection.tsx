@@ -5,9 +5,9 @@ import { useTranslation } from 'react-i18next';
 
 const MapSection = () => {
   const { t } = useTranslation();
-  const mapsQuery = encodeURIComponent('CLINIQUE AALEM ESSIHA');
-  const mapsEmbedSrc = `https://www.google.com/maps?q=${mapsQuery}&output=embed`;
-  const mapsOpenUrl = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`;
+  const mapsEmbedSrc = 'https://www.google.com/maps?q=36.1241074,5.9873638&z=17&output=embed';
+  const mapsOpenUrl =
+    'https://www.google.com/maps/place/36%C2%B007%2726.8%22N+5%C2%B059%2714.5%22E/@36.1241074,5.9847889,17z/data=!3m1!4b1!4m4!3m3!8m2!3d36.1241074!4d5.9873638?hl=en&entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D';
 
   const accessItems = [
     t('map.access1'),
@@ -43,8 +43,15 @@ const MapSection = () => {
           <div className="space-y-4">
             <div>
               <p className="opacity-90 font-bold">{t('map.addressLabel')}</p>
-              <p className="opacity-90">{t('map.addressPending')}</p>
+              <p className="opacity-90">{t('map.addressValue')}</p>
               <p className="opacity-80 text-sm mt-1">{t('map.addressNote')}</p>
+            </div>
+
+            <div>
+              <p className="opacity-90 font-bold">{t('map.phoneLabel')}</p>
+              <a href="tel:0556616729" className="opacity-90 hover:text-primary transition">
+                {t('map.phoneValue')}
+              </a>
             </div>
 
             <div>

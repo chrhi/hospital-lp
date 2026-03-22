@@ -33,14 +33,14 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <nav className="shrink-0">
       {isAboveMediumScreens && (
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-6 flex-wrap justify-end">
+        <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 flex-wrap justify-end">
             <Links
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
           </div>
-          <LanguageSelect className="shrink-0" />
+          <LanguageSelect className="shrink-0 min-h-12 px-7 text-base" />
           <Button
             href={`#${SelectedPage.Contact}`}
             onClick={() => setSelectedPage(SelectedPage.Contact)}
@@ -50,8 +50,8 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
         </div>
       )}
       {!isAboveMediumScreens && (
-        <button onClick={() => setIsMenuToggled((prev) => !prev)}>
-          <Bars3Icon className="h-8 w-8" />
+        <button onClick={() => setIsMenuToggled((prev) => !prev)} className="p-1">
+          <Bars3Icon className="h-7 w-7" />
         </button>
       )}
       {/* MOBILE MENU MODAL */}
@@ -64,7 +64,7 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
           />
 
           {/* Drawer */}
-          <div className="fixed end-0 top-0 z-50 h-[100dvh] w-[min(90vw,360px)] bg-white/95 backdrop-blur-xl drop-shadow-2xl border-s border-white/60 flex flex-col">
+          <div className="fixed end-0 top-0 z-50 h-[100dvh] w-[min(82vw,320px)] bg-white/95 backdrop-blur-xl drop-shadow-2xl border-s border-white/60 flex flex-col">
             <div className="flex items-center justify-between px-5 py-4 border-b border-ink/5">
               <div className="min-w-0">
                 <div className="text-sm font-extrabold tracking-wide text-ink truncate">

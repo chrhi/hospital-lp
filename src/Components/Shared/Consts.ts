@@ -103,5 +103,5 @@ export const FeedbackData = {
 
 export const FooterData = {
   logo: logo,
-  phone: '',
+  phone: '0556616729',
 };
