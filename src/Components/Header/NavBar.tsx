@@ -74,16 +74,13 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
                   {t('header.clinicName')}
                 </div>
               </div>
-              <div className="flex items-center gap-2 shrink-0">
-                <LanguageSelect className="max-w-[120px] text-xs py-1.5" />
-                <button
-                  aria-label={t('common.closeMenuAria')}
-                  onClick={closeMenu}
-                  className="p-2 rounded-xl hover:bg-ink/5 transition"
-                >
-                  <XMarkIcon className="h-8 w-8" />
-                </button>
-              </div>
+              <button
+                aria-label={t('common.closeMenuAria')}
+                onClick={closeMenu}
+                className="p-2 rounded-xl hover:bg-ink/5 transition shrink-0"
+              >
+                <XMarkIcon className="h-8 w-8" />
+              </button>
             </div>
 
             <div className="flex-1 overflow-auto px-4 py-4">
@@ -116,7 +113,8 @@ const NavBar = ({ selectedPage, setSelectedPage }: Props) => {
               </nav>
             </div>
 
-            <div className="p-4 border-t border-ink/5">
+            <div className="flex flex-col gap-3 p-4 border-t border-ink/5">
+              <LanguageSelect size="toolbar" className="w-full" />
               <Button
                 href={`#${SelectedPage.Contact}`}
                 onClick={() => {
