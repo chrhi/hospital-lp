@@ -4,7 +4,7 @@ import Main from './Components/Main/Main';
 
 function App() {
   return (
-    <div className="text-ink app min-w-[280px] min-h-screen antialiased">
+    <div className="text-ink app min-w-[280px] min-h-screen antialiased overflow-x-clip">
       <Header />
       <Main />
       <Footer />

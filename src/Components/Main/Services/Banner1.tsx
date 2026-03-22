@@ -1,79 +1,51 @@
-import hopital02 from '@/assets/hospital-images/hopital-02.jpg';
-import hopital04 from '@/assets/hospital-images/hopital-04.jpg';
-import hopital05 from '@/assets/hospital-images/hopital-05.jpg';
-import hopital10 from '@/assets/hospital-images/hopital-10.jpg';
-import hopital12 from '@/assets/hospital-images/hopital-12.jpg';
+import hopital11 from '@/assets/hospital-images/hopital-11.jpg';
 import ListItem from './ListItem';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const Banner1 = () => {
   const { t } = useTranslation();
   const texts = t('services.banner.texts', { returnObjects: true }) as string[];
 
-  return (
-    <div className="mt-20 grid gap-6 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-8">
-      <div className="rounded-3xl border-2 border-ink/12 bg-white/80 p-5 md:p-6 lg:max-w-[540px]">
-        <h3 className="text-xl font-bold md:text-2xl lg:text-3xl mb-5">
-          {t('services.banner.heading')}
-        </h3>
-        <ul className="text-sm md:ms-5 gap-2 md:gap-5 flex flex-col">
-          {texts.map((text, index) => (
-            <ListItem key={index} text={text} />
-          ))}
-        </ul>
-      </div>
+  const heroMinH =
+    'min-h-[max(22rem,62vh)] sm:min-h-[max(26rem,66vh)] md:min-h-[max(28rem,70vh)] lg:min-h-[max(32rem,74vh)]';
 
-      <figure
-        className="relative m-0 rounded-3xl border-2 border-ink/12 bg-secondary/25 p-3 md:p-4"
-        aria-label={t('services.banner.galleryAriaLabel')}
+  return (
+    <div className="relative mt-20 w-screen max-w-none [margin-inline:calc(50%-50vw)] overflow-x-clip">
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        className={`relative isolate w-full overflow-hidden shadow-xl ${heroMinH}`}
       >
-        <div className="grid grid-cols-3 auto-rows-[104px] gap-2 md:auto-rows-[132px] md:gap-3">
-          <div className="col-span-2 row-span-2 overflow-hidden rounded-2xl border-2 border-ink/12 bg-white/70">
-            <img
-              src={hopital12}
-              alt=""
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl border-2 border-ink/12 bg-white/70">
-            <img
-              src={hopital02}
-              alt=""
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl border-2 border-ink/12 bg-white/70">
-            <img
-              src={hopital04}
-              alt=""
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="col-span-2 overflow-hidden rounded-2xl border-2 border-ink/12 bg-white/70">
-            <img
-              src={hopital05}
-              alt=""
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl border-2 border-ink/12 bg-white/70">
-            <img
-              src={hopital10}
-              alt=""
-              loading="lazy"
-              className="h-full w-full object-cover"
-            />
+        <img
+          src={hopital11}
+          alt=""
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-ink/90 via-ink/72 to-ink/58 md:bg-gradient-to-r md:from-ink/88 md:via-ink/62 md:to-ink/45"
+          aria-hidden
+        />
+
+        <div
+          className={`relative z-10 mx-auto flex w-full max-w-[1250px] flex-col justify-center px-5 py-16 sm:py-20 md:px-16 md:py-24 lg:py-28 ${heroMinH}`}
+        >
+          <div className="max-w-3xl">
+            <h3 className="mb-6 text-2xl font-bold text-white drop-shadow-md sm:text-3xl md:text-4xl">
+              {t('services.banner.heading')}
+            </h3>
+            <ul className="flex flex-col gap-3 md:gap-4 md:ms-1">
+              {texts.map((text, index) => (
+                <ListItem key={index} text={text} variant="onImage" />
+              ))}
+            </ul>
           </div>
         </div>
-
-        <figcaption className="pointer-events-none absolute bottom-5 start-5 rounded-full border-2 border-primary/35 bg-white/90 px-4 py-1 text-xs font-bold text-primary backdrop-blur-sm">
-          {t('header.clinicName')}
-        </figcaption>
-      </figure>
+      </motion.div>
     </div>
   );
 };
