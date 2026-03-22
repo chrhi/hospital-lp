@@ -279,13 +279,13 @@
     }
   },
   "footer": {
-    "hours": "ساعات العمل: يُحدَّد لاحقًا",
+    "hours": "",
     "navigation": "التنقل",
     "specialtiesTitle": "التخصصات (مختارات)",
     "specialtiesHint": "راجع قسم <bold>التخصصات</bold> للقائمة الكاملة.",
     "disclaimer": "لأي معلومات إضافية حول المواعيد أو التوجيهات، يرجى التواصل معنا مباشرة.",
     "copyright": "© {{year}} Clinique AALEM ESSIHA",
-    "websitePending": "الموقع: يُحدَّد لاحقًا",
+    "websitePending": "",
     "clinicLine": "Clinique AALEM ESSIHA",
     "addressLine": "العنوان: العنوان الاداري شارع الامير عبد القادر بلدية تاجنانت ولاية ميلة",
     "contactTitle": "اتصل بنا",

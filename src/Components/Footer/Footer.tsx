@@ -8,6 +8,8 @@ const Footer = () => {
   const departments = t('footer.departments', {
     returnObjects: true,
   }) as string[];
+  const hoursLine = t('footer.hours').trim();
+  const websitePendingLine = t('footer.websitePending').trim();
 
   return (
     <div className="bg-secondary/30 mt-24 px-6 py-16 md:px-16 border-t border-white/40">
@@ -25,7 +27,9 @@ const Footer = () => {
               <p className="opacity-90">{t('footer.clinicLine')}</p>
               <p className="opacity-90">{t('footer.addressLine')}</p>
               {FooterData.phone ? <p>{FooterData.phone}</p> : null}
-              <p className="opacity-80 text-sm font-normal">{t('footer.hours')}</p>
+              {hoursLine ? (
+                <p className="opacity-80 text-sm font-normal">{hoursLine}</p>
+              ) : null}
             </div>
           </div>
 
@@ -70,7 +74,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-6 border-t border-white/40 text-sm opacity-80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
-          <p>{t('footer.websitePending')}</p>
+          {websitePendingLine ? <p>{websitePendingLine}</p> : null}
         </div>
       </div>
     </div>
